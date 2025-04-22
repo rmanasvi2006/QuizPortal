@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fde8f0;
+    font-family: 'Fredoka One', sans-serif;
+    overflow: hidden;
+}
+
+/* Hero Content */
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.main-heading {
+    font-size: 4.5rem;
+    color: #ff5e91;
+    text-shadow: 0 0 20px #ffd6e8;
+    animation: glowText 2s ease-in-out infinite alternate;
+}
+
+.sub-heading {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #f56b9a;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.start-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffe0f0;
+    color: #ff3f7f;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0 0 20px #ffc0cb;
+    transition: all 0.3s ease-in-out;
+}
+
+.start-btn:hover {
+    background-color: #ffaad4;
+    color: white;
+    box-shadow: 0 0 30px #ff8fc3;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes glowText {
+    0% { text-shadow: 0 0 10px #ffc0cb; }
+    100% { text-shadow: 0 0 25px #ff77ab; }
+}
+
+/* Floating Icons */
+.bg-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.float-icon {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    opacity: 0.8;
+    animation: float 10s infinite ease-in-out;
+}
+
+.icon-brain { bottom: 20%; left: 10%; }
+.icon-choose { top: 20%; left: 10%; }
+.icon-idea { top: 10%; left: 80%; }
+.icon-open-book { bottom: 30%; right: 20%; }
+.icon-star { bottom: 80%; left: 50%; }
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0px); }
+}
+
+/* ------------------ Login Page Styles ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body {
+  background-color: #ffe4ec; /* pastel pink */
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #fff0f6; /* light pink */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.login-container h2 {
+  color: #ff4d88; /* a soft bright pink */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ffcce0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  background-color: #fff5fa;
+}
+
+.login-container input[type="submit"] {
+  background-color: #ff99cc; /* pastel pink */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #ff66a3;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px; /* space between login and bear */
+}
+
+
+
+
+.floating-icon {
+  width: 120px; /* adjust width to your liking */
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-reading { middle:40%; right: 20%; }
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
